@@ -1,0 +1,10 @@
+.loading-bar {
+    position: abs;
+    bottom: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    width: calc(100% - 2 * 20px); /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    background-color: #000000; /* Background color for the loading bar container */
+    border: 1px solid #000000; /* Black outline */
+    border-radius: 10px; /* Rounded corners */
+}

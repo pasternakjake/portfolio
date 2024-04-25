@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
+    <title>My Website</title>
+</head>
+<body>
+    <div class="container">
+        <button onclick="location.href='index.html'">Home,</button>
+        <button onclick="location.href='index02.html'">Projects,</button>
+        <button onclick="location.href='about.html'">About,</button>
+        <button onclick="location.href='contact.html'">Contact</button>
+    </div>
+
+    <div id="footer">
+        <div id="location">Sydney, Australia</div>
+        <div id="clock"></div>
+        <div id="copyright">2024©</div>
+    </div>
+
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const options = {timeZone: 'Australia/Sydney', hour12: false};
+            const timeString = now.toLocaleTimeString('en-AU', options);
+            document.getElementById('clock').textContent = timeString;
+        }
+        
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
